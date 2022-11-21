@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGedicht", "ConsoleGe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAsciiArt", "ConsoleAsciiArt\ConsoleAsciiArt.csproj", "{0804096D-2208-46B6-B510-266921FDD6F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGreenHouse", "ConsoleGreenHouse\ConsoleGreenHouse.csproj", "{68F5A7F4-A518-44B3-A916-BF1571C23D84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{0804096D-2208-46B6-B510-266921FDD6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0804096D-2208-46B6-B510-266921FDD6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0804096D-2208-46B6-B510-266921FDD6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F5A7F4-A518-44B3-A916-BF1571C23D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F5A7F4-A518-44B3-A916-BF1571C23D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F5A7F4-A518-44B3-A916-BF1571C23D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F5A7F4-A518-44B3-A916-BF1571C23D84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
