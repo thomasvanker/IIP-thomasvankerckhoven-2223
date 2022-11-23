@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAsciiArt", "ConsoleA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGreenHouse", "ConsoleGreenHouse\ConsoleGreenHouse.csproj", "{68F5A7F4-A518-44B3-A916-BF1571C23D84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfHalloWereld", "WpfHalloWereld\WpfHalloWereld.csproj", "{2CD7FB6D-E621-406A-B106-1DF502A98941}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{68F5A7F4-A518-44B3-A916-BF1571C23D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68F5A7F4-A518-44B3-A916-BF1571C23D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68F5A7F4-A518-44B3-A916-BF1571C23D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD7FB6D-E621-406A-B106-1DF502A98941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD7FB6D-E621-406A-B106-1DF502A98941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD7FB6D-E621-406A-B106-1DF502A98941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD7FB6D-E621-406A-B106-1DF502A98941}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
