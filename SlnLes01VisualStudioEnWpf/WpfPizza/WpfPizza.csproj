@@ -96,9 +96,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="4 szns.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\hawai.jpeg" />
   </ItemGroup>
   <ItemGroup>

@@ -27,10 +27,9 @@ namespace WpfChat
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            blkChat.Text = txtNaam.Text + " says:" + Environment.NewLine +  txtBericht.Text;
+            blkChat.Text = txtNaam.Text + " says:" + Environment.NewLine + txtBericht.Text;
             txtBericht.Text = "";
             txtNaam.Text = "";
-            
         }
     }
 }
