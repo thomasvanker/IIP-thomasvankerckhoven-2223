@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleBuffet
+﻿namespace ConsoleBuffet
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Security.Cryptography;
+    using System.Text;
+    using System.Threading.Tasks;
+
     internal class Program
     {
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Console.ForegroundColor= ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("WELKOM IN HET BUFFETRESTAURANT");
             Console.WriteLine("==============================");
             Console.WriteLine();
@@ -42,23 +42,23 @@ namespace ConsoleBuffet
             int cashBetaald = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("U krijgt terug:");
             double terugGeld = (double)cashBetaald - totaalFloor;
-            int vijftig = (int)terugGeld/50;
+            int vijftig = (int)terugGeld / 50;
             int vijftigTweede = (int)terugGeld - (vijftig * 50);
             int twintig = vijftigTweede / 20;
             int twintigTweede = (int)vijftigTweede - (twintig * 20);
             int tien = (int)twintigTweede / 10;
             int tienTweede = (int)twintigTweede - (tien * 10);
-            int vijf = (int)tienTweede/5;
+            int vijf = (int)tienTweede / 5;
             int vijfTweede = (int)tienTweede - (vijf * 5);
-            int twee = (int) vijfTweede/2;
+            int twee = (int)vijfTweede / 2;
             int tweeTweede = (int)vijfTweede - (twee * 2);
-            int een = (int)tweeTweede/1;
+            int een = (int)tweeTweede / 1;
             Console.WriteLine("- " + vijftig + " briefje(s) van 50");
             Console.WriteLine("- " + twintig + " briefje(s) van 20");
             Console.WriteLine("- " + tien + " briefje(s) van 10");
             Console.WriteLine("- " + vijf + " briefje(s) van 5");
             Console.WriteLine("- " + twee + " stuk(ken) van 2");
-            Console.WriteLine("- " + een+ " stuk(ken) van 1");
+            Console.WriteLine("- " + een + " stuk(ken) van 1");
 
             Console.ReadLine();
         }
