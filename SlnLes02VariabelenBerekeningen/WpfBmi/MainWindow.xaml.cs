@@ -30,17 +30,17 @@ namespace WpfBmi
 
         }
 
-        private void btnBerekenen_Click(object sender, RoutedEventArgs e)
+        private void BtnBerekenen_Click(object sender, RoutedEventArgs e)
         {
             double lengte1;
             double lengte2;
             double lengte3;
             double gewicht;
             double bmi;
-            lengte1 = double.Parse(txtLengte.Text);
+            lengte1 = Convert.ToDouble(txtLengte.Text);
             lengte2 = lengte1 / 100;
             lengte3 = lengte2 * lengte2;
-            gewicht = double.Parse(txtGewicht.Text);
+            gewicht = Convert.ToDouble(txtGewicht.Text);
             bmi = gewicht / lengte3;
             lblAntw.Content = Math.Round(bmi,1);     
         }

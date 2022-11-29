@@ -9,7 +9,7 @@
     <Grid HorizontalAlignment="Center" Width="780">
         <TextBox x:Name="txtLengte" HorizontalAlignment="Left" Margin="355,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtGewicht" HorizontalAlignment="Left" Margin="355,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnBerekenen" Content="BEREKENEN" HorizontalAlignment="Center" Margin="0,192,0,0" VerticalAlignment="Top" Width="200" Height="35" FontSize="18" FontWeight="Bold" Click="btnBerekenen_Click"/>
+        <Button x:Name="btnBerekenen" Content="BEREKENEN" HorizontalAlignment="Center" Margin="0,192,0,0" VerticalAlignment="Top" Width="200" Height="35" FontSize="18" FontWeight="Bold" Click="BtnBerekenen_Click"/>
         <Label x:Name="lblCalc" Content="BMI CALCULATOR" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
         <Label x:Name="lblLengte" Content="Lengte:" HorizontalAlignment="Left" Margin="279,101,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Label x:Name="lblGewicht" Content="Gewicht" HorizontalAlignment="Left" Margin="279,146,0,0" VerticalAlignment="Top" FontSize="14"/>
