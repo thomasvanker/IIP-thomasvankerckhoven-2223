@@ -40,10 +40,10 @@ namespace WpfInterest
             startBedrag = Convert.ToDouble(txtBedrag.Text);
             interestPercent = Convert.ToDouble(txtJaarlijkse.Text);
             periode = Convert.ToDouble(lblSliderValue.Content);
-            interestKomma = interestPercent/ 100;
-            endbedrag = startBedrag * Math.Pow(1+ interestKomma, periode);
-            lblJaar.Content = lblSliderValue.Content;
-            lblAntwoord.Content = "€" + (Math.Round(endbedrag, 2));
+            interestKomma = interestPercent / 100;
+            endbedrag = startBedrag * Math.Pow(1 + interestKomma, periode);
+            lblJaar.Content = " De waarde na " + lblSliderValue.Content + " jaar bedraagt " + "€" + Math.Round(endbedrag, 2);
+
         }
     }
 }

@@ -28,9 +28,6 @@
         </Slider>
         <Label Content="jaar" HorizontalAlignment="Left" Margin="347,143,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnBerekenen" Content="BEREKENEN" HorizontalAlignment="Left" Margin="122,187,0,0" VerticalAlignment="Top" Height="32" Width="187" FontWeight="Bold" FontSize="14" Click="btnBerekenen_Click"/>
-        <Label Content="De waarde na " HorizontalAlignment="Left" Margin="71,248,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblAntwoord" Content="" HorizontalAlignment="Left" Margin="242,248,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblJaar" Content="" HorizontalAlignment="Left" Margin="150,248,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="173,253,0,0" TextWrapping="Wrap" Text="jaar bedraagt" VerticalAlignment="Top"/>
+        <Label x:Name="lblJaar" Content="" HorizontalAlignment="Left" Margin="71,249,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

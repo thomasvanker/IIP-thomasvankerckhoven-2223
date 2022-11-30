@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:WpfWinkel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Initialized="Grid_Initialized">
+        <Image HorizontalAlignment="Left" Height="173" Margin="21,54,0,0" VerticalAlignment="Top" Width="230" Source="/img/banane.png"/>
+        <Image HorizontalAlignment="Left" Height="149" Margin="246,62,0,0" VerticalAlignment="Top" Width="163" Source="/img/butter.png"/>
+        <Image HorizontalAlignment="Left" Height="125" Margin="426,57,0,0" VerticalAlignment="Top"  Width="144" Source="/img/eggs.png"/>
+        <Label Content="2,20 euro" HorizontalAlignment="Left" Margin="100,191,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="3,05 euro" HorizontalAlignment="Left" Margin="426,189,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="2,75 euro" HorizontalAlignment="Left" Margin="268,191,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnBanaan" Content="+" HorizontalAlignment="Left" Margin="205,192,0,0" VerticalAlignment="Top" Width="25" Height="25" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Click="btnBanaan_Click"/>
+        <Button x:Name="btnEggs" Content="+" HorizontalAlignment="Left" Margin="538,192,0,0" VerticalAlignment="Top" Width="25" Height="25" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Click="btnEggs_Click"/>
+        <Button x:Name="btnBoter" Content="+" HorizontalAlignment="Left" Margin="384,193,0,0" VerticalAlignment="Top" Width="25" Height="25" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Click="btnBoter_Click"/>
+        <Label x:Name="lblBanaan" Content="" HorizontalAlignment="Left" Margin="100,249,0,0" VerticalAlignment="Top" FontSize="13" FontStyle="Italic"/>
+        <Label x:Name="lblBoter" Content="" HorizontalAlignment="Left" Margin="268,249,0,0" VerticalAlignment="Top" FontSize="13" FontStyle="Italic"/>
+        <Label x:Name="lblEggs" Content="" HorizontalAlignment="Left" Margin="426,249,0,0" VerticalAlignment="Top" FontSize="13" FontStyle="Italic"/>
+        <ListBox x:Name="lstBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="588,62,44,171"/>
+        <Button x:Name="btnHerstart" Content="HERSTART WINKEL" HorizontalAlignment="Left" Margin="80,327,0,0" VerticalAlignment="Top" Height="27" Width="115"/>
+        <Button x:Name="btnAfrekenen" Content="AFREKENEN" HorizontalAlignment="Left" Margin="615,327,0,0" VerticalAlignment="Top" Height="27" Width="114" Click="btnAfrekenen_Click"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="709,283,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+
     </Grid>
 </Window>
