@@ -20,9 +20,9 @@
         <Label x:Name="lblBoter" Content="" HorizontalAlignment="Left" Margin="268,249,0,0" VerticalAlignment="Top" FontSize="13" FontStyle="Italic"/>
         <Label x:Name="lblEggs" Content="" HorizontalAlignment="Left" Margin="426,249,0,0" VerticalAlignment="Top" FontSize="13" FontStyle="Italic"/>
         <ListBox x:Name="lstBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="588,62,44,171"/>
-        <Button x:Name="btnHerstart" Content="HERSTART WINKEL" HorizontalAlignment="Left" Margin="80,327,0,0" VerticalAlignment="Top" Height="27" Width="115"/>
+        <Button x:Name="btnHerstart" Content="HERSTART WINKEL" HorizontalAlignment="Left" Margin="80,327,0,0" VerticalAlignment="Top" Height="27" Width="115" Click="btnHerstart_Click"/>
         <Button x:Name="btnAfrekenen" Content="AFREKENEN" HorizontalAlignment="Left" Margin="615,327,0,0" VerticalAlignment="Top" Height="27" Width="114" Click="btnAfrekenen_Click"/>
-        <Label Content="" HorizontalAlignment="Left" Margin="709,283,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblTotaal" Content="0" HorizontalAlignment="Left" Margin="672,281,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
 
     </Grid>
 </Window>
