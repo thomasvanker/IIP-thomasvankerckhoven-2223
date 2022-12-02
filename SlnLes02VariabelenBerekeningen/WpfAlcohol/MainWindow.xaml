@@ -19,7 +19,6 @@
         <Slider x:Name="sld3" Maximum="5" Minimum="0" Value="0" IsSnapToTickEnabled="True" TickFrequency="1" HorizontalAlignment="Left" Margin="226,352,0,0" VerticalAlignment="Top" Width="338" Height="40" ValueChanged="sld3_ValueChanged"/>
         <Rectangle x:Name="myRectangle" HorizontalAlignment="Left" Height="28" Margin="226,460,0,0" VerticalAlignment="Top" MaxWidth="400"/>
         <TextBlock HorizontalAlignment="Left" Margin="82,38,0,0" TextWrapping="Wrap" Text="Alchohol-gehalte" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Rectangle x:Name="yourRectangle" HorizontalAlignment="Left" Height="43" Margin="221,493,0,0" VerticalAlignment="Top" Width="222"/>
 
     </Grid>
 </Window>

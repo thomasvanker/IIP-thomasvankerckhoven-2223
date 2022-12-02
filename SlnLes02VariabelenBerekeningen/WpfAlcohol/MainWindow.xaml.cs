@@ -29,11 +29,11 @@ namespace WpfAlcohol
         {
             lblSliderBeer.Content = sld1.Value + " glazen";
             myRectangle.Width = (sld1.Value * 25) + (sld2.Value * 25);
-            if (myRectangle.Width > yourRectangle.Width)
+            if (myRectangle.Width > 150)
             {
                 myRectangle.Fill = new SolidColorBrush(Colors.Red);
             }
-            else
+            else if (myRectangle.Width < 200)
             {
                 myRectangle.Fill = new SolidColorBrush(Colors.Green);
             }
@@ -44,11 +44,11 @@ namespace WpfAlcohol
         {
             lblSliderWine.Content = sld2.Value + " glazen";
             myRectangle.Width = (sld1.Value * 25) + (sld2.Value * 25) + (sld3.Value * 25);
-            if (myRectangle.Width > yourRectangle.Width)
+            if (myRectangle.Width > 150)
             {
                 myRectangle.Fill = new SolidColorBrush(Colors.Red);
             }
-            else
+            else if (myRectangle.Width < 200)
             {
                 myRectangle.Fill = new SolidColorBrush(Colors.Green);
             }
@@ -58,11 +58,11 @@ namespace WpfAlcohol
         {
             lblSliderWhisk.Content = sld3.Value + " glazen";
             myRectangle.Width = (sld1.Value * 25) + (sld2.Value * 25) + (sld3.Value * 25);
-            if (myRectangle.Width > yourRectangle.Width)
+            if (myRectangle.Width > 150)
             {
                 myRectangle.Fill = new SolidColorBrush(Colors.Red);
             }
-            else
+            else if (myRectangle.Width < 200)
             {
                 myRectangle.Fill = new SolidColorBrush(Colors.Green);
             }
