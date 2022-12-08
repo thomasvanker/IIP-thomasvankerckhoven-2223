@@ -19,38 +19,37 @@ namespace ConsoleEindcijfer
             double cijferProject = Convert.ToDouble(Console.ReadLine());
             Console.Write("Geef het cijfer op het examen (op 20): ");
             double cijferExamen = Convert.ToDouble(Console.ReadLine());
-            double cijferDagelijks2;
-            double cijferProject2;
-            double cijferExamen2;
-            double cijferDagelijks3;
-            double cijferProject3;
-            double cijferExamen3;
 
+            double percentage1 = (cijferDagelijks / 20.0) * 30;
+            double percentage2 = (cijferProject/ 20.0) * 20;
+            double percentage3 = (cijferExamen / 20.0) * 50;
+            double result = (percentage1 + percentage2 + percentage3);
+            Console.WriteLine();
+            Console.WriteLine("Je eindcijfer is " + Math.Round(result, 1) + "%");
+            string commentaar = "";
+            if (result < 50)
+            {
+                commentaar = "-> onvoldoende";
+            }
+            else if (result > 82.5)
+            {
+                commentaar = "-> grootste onderscheiding";
+            }
+            else if (result > 75)
+            {
+                commentaar = "-> grote onderscheiding";
+            }
+            else if (result > 67.5)
+            {
+                commentaar = "-> onderscheiding";
+            }
+            else if (result > 50)
+            {
+                commentaar = "-> voldoende";
+            }
 
-            cijferDagelijks2 = ((cijferDagelijks * 100)/60);
-            cijferProject2 = ((cijferProject * 100)/60);
-            cijferExamen2 = ((cijferExamen * 100) / 60);
-
-            cijferDagelijks3 = ((cijferDagelijks2 * 30/100));
-            cijferProject3 = ((cijferProject2 * 20 / 100));
-            cijferExamen3 = ((cijferExamen2 * 50 / 100));
-
-            Console.WriteLine(cijferDagelijks2);
-            Console.WriteLine(cijferProject2);
-            Console.WriteLine(cijferExamen2);
-
-            Console.WriteLine(cijferDagelijks3);
-            Console.WriteLine(cijferProject3);
-            Console.WriteLine(cijferExamen3);
-
-
-            double cijfertotaal = cijferDagelijks3 + cijferProject3 + cijferExamen3;
-
-            Console.WriteLine("Je eindcijfer is " + Math.Round(cijfertotaal, 1) + "%");
-            
-
-
-
+            Console.WriteLine();
+            Console.WriteLine(commentaar);
             Console.ReadKey();
         }
     }
