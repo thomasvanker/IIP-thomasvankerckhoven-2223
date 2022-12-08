@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _WpfOpties_.Properties
+namespace WpfOpties.Properties
 {
 
 

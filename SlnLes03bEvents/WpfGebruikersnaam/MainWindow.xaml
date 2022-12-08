@@ -9,8 +9,8 @@
     <Grid>
         <Label Content="Kies een gebruikersnaam:" HorizontalAlignment="Left" Margin="93,68,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="265,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txtUsername_TextChanged"/>
-        <Label x:Name="lblSpaties" Content="" HorizontalAlignment="Left" Margin="265,126,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCijfer" Content="" HorizontalAlignment="Left" Margin="265,95,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSpaties" Content="" HorizontalAlignment="Left" Margin="265,126,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label x:Name="lblCijfer" Content="" HorizontalAlignment="Left" Margin="265,95,0,0" VerticalAlignment="Top" Foreground="Red"/>
 
     </Grid>
 </Window>
