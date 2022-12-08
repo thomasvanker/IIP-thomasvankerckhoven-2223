@@ -23,7 +23,6 @@ namespace ConsoleBestelling
             int prijsPizza = 0;
             double prijsTotaal = 0;
 
-
             if (eersteKeuze == "c")
             {
                 eersteKeuze = "Pizza Diabolo";
