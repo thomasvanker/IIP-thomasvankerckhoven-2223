@@ -22,18 +22,14 @@ namespace WpfDatumkiezer
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {
-
-            
+        {     
             InitializeComponent();
         }
 
-        private void dtPicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        private void datePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
-            DatePicker datePicker = sender as DatePicker;
-            Label lblDatum = this.FindName("selectedDateLabel") as Label;
-            lblDatum.Content = datePicker.SelectedDate.ToString();
-
+            DateTime geselecteerdeDatum = datePicker.SelectedDate.Value;
+            lblDatum.Content = "Je selecteerde " + geselecteerdeDatum.ToString("d MMM yyy");
         }
     }
 }
