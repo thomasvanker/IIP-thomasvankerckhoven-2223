@@ -61,7 +61,7 @@ namespace WpfOpties
         {
             imgCheck.Visibility = Visibility.Visible;
             if (txtNamelijk.Text == "")
-            {
+            {   
                 imgCheck.Visibility = Visibility.Hidden;
             }
         }
