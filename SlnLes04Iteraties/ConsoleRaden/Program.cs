@@ -24,7 +24,8 @@ namespace ConsoleRaden
 
                 if (gok == geheimGetal)
                 {
-                    Console.WriteLine("Geraden");break;
+                    Console.WriteLine("Geraden");
+                    break;
                 }
 
                 Console.Write("Poging 2: ");
@@ -33,7 +34,8 @@ namespace ConsoleRaden
 
                 if (gok == geheimGetal)
                 {
-                    Console.WriteLine("Geraden");break;
+                    Console.WriteLine("Geraden");
+                    break;
                 }
 
                 Console.Write("Poging 3: ");
@@ -42,7 +44,8 @@ namespace ConsoleRaden
 
                 if (gok == geheimGetal)
                 {
-                    Console.WriteLine("Geraden");break;
+                    Console.WriteLine("Geraden");
+                    break;
                 }
 
                 else if (gok != geheimGetal)
