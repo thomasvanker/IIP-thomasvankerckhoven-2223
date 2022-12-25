@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +24,10 @@ namespace WpfProject
         public MainWindow()
         {
             InitializeComponent();
+            SoundPlayer player = new SoundPlayer("C:\\Users\\thoma\\OneDrive\\Documents\\GitHub\\IIP-thomasvankerckhoven-2223\\SlnProject\\WpfProject\\sounds\\drums.mp3");
+            player.Load();
+            player.Play();  
+            
         }
     }
 }
