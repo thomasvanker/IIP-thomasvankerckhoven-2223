@@ -130,17 +130,5 @@
   <ItemGroup>
     <Resource Include="images\learntosequenceGood.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="sounds\cello.wav" />
-    <Content Include="sounds\clarinet.wav" />
-    <Content Include="sounds\drums.mp3" />
-    <Content Include="sounds\flute.mp3" />
-    <Content Include="sounds\guitar.mp3" />
-    <Content Include="sounds\harp.mp3" />
-    <Content Include="sounds\piano.mp3" />
-    <Content Include="sounds\saxophone.mp3" />
-    <Content Include="sounds\trumpet.mp3" />
-    <Content Include="sounds\violin.wav" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
