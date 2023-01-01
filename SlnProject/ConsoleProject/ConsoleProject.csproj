@@ -53,7 +53,7 @@
     <Content Include="sounds\cello.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="sounds\clarinet.wav">
+    <Content Include="sounds\clarinetWAV.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="sounds\drums.wav">
@@ -77,7 +77,7 @@
     <Content Include="sounds\trumpet.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="sounds\violin %281%29.wav">
+    <Content Include="sounds\violin.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
