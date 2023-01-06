@@ -53,9 +53,11 @@
     <Content Include="sounds\cello.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="sounds\chipmunksLose.wav" />
     <Content Include="sounds\clarinetWAV.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="sounds\correct.wav" />
     <Content Include="sounds\drums.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
