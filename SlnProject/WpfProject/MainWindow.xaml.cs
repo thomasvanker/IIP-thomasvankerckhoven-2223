@@ -21,21 +21,9 @@ namespace WpfProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        Random rand = new Random();
-
-        List<string> songs = new List<string>()
-            {
-                "cello.wav",
-                "clarinetWAV.wav",
-                "drums.wav",
-                "flute.wav",
-                "guitar.wav",
-                "harp.wav",
-                "piano.wav",
-                "saxophone.wav",
-                "trumpet.wav",
-                "violin.wav"
-            };
+        private Random rand = new Random();
+        private string[] Instruments = { "cello.wav, clarinetWAV.wav, drums.wav", "flute.wav", "guitar.wav", "harp.wav", "piano.wav", "saxophone.wav", "trumpet.wav", "violin.wav" };
+        private SoundPlayer soundplayer = new SoundPlayer();
 
         List<string> imageList = new List<string>()
             {
@@ -52,8 +40,12 @@ namespace WpfProject
             };
         public MainWindow()
         {
-            
-            
+            InitializeComponent();
+        }
+
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+            for(int i = 0; //continue
         }
     }
 }

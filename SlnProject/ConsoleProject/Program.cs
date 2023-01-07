@@ -116,7 +116,7 @@ namespace ConsoleProject
                         
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("You have the choice between: \r\nclarinet, cello, flute, drums, harp, guitar, saxophone, pianon, violin, trumpet. ");
+                        Console.WriteLine("You have the choice between: \r\nclarinet, cello, flute, drums, harp, guitar, saxophone, piano, violin, trumpet. ");
                         Console.WriteLine();
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine("_.~\"~._.~\"~._.~\"~._.~\"~.__.~\"~._.~\"~._.~\"~._.~\"~.__.~\"~._.~\"~._.~\"~._.~\"~._");

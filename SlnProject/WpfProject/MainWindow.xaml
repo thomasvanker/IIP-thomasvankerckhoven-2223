@@ -12,19 +12,19 @@
 
         </ListBox>
         <Label Content="HIGHSCORES" HorizontalAlignment="Left" Margin="659,35,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnStart" Content="START" HorizontalAlignment="Left" Margin="50,346,0,0" VerticalAlignment="Top" Height="50" Width="110" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnStart" Content="START" HorizontalAlignment="Left" Margin="50,346,0,0" VerticalAlignment="Top" Height="50" Width="110" FontSize="20" FontWeight="Bold" Click="btnStart_Click"/>
         <Button x:Name="btnReset" Content="RESET" HorizontalAlignment="Left" Margin="212,346,0,0" VerticalAlignment="Top" Height="50" Width="110" FontSize="20" FontWeight="Bold"/>
         <Image HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="357" Source="/images/learntosequenceGood.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="10,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/cello.png"/>
-        <Image HorizontalAlignment="Left" Height="90" Margin="105,89,0,0" VerticalAlignment="Top" Width="100" Source="/images/clarinet.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="243,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/drums.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="377,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/flute.png" StretchDirection="DownOnly" Stretch="Fill"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="531,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/guitar.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="10,192,0,0" VerticalAlignment="Top" Width="100" Source="/images/harp.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="105,209,0,0" VerticalAlignment="Top" Width="100" Source="/images/piano.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="271,192,0,0" VerticalAlignment="Top" Width="100" Source="/images/saxophone.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="377,209,0,0" VerticalAlignment="Top" Width="100" Source="/images/trumpet.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="531,192,0,0" VerticalAlignment="Top" Width="100" Source="/images/violin.png"/>
+        <Image x:Name="cello" HorizontalAlignment="Left" Height="100" Margin="10,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/cello.png"/>
+        <Image x:Name="clarinet" HorizontalAlignment="Left" Height="90" Margin="105,89,0,0" VerticalAlignment="Top" Width="100" Source="/images/clarinet.png"/>
+        <Image x:Name="drums" HorizontalAlignment="Left" Height="100" Margin="243,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/drums.png"/>
+        <Image x:Name="flute" HorizontalAlignment="Left" Height="100" Margin="377,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/flute.png" StretchDirection="DownOnly" Stretch="Fill"/>
+        <Image x:Name="guitar" HorizontalAlignment="Left" Height="100" Margin="531,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/guitar.png"/>
+        <Image x:Name="harp" HorizontalAlignment="Left" Height="100" Margin="10,192,0,0" VerticalAlignment="Top" Width="100" Source="/images/harp.png"/>
+        <Image x:Name="piano" HorizontalAlignment="Left" Height="100" Margin="105,209,0,0" VerticalAlignment="Top" Width="100" Source="/images/piano.png"/>
+        <Image x:Name="saxophone" HorizontalAlignment="Left" Height="100" Margin="271,192,0,0" VerticalAlignment="Top" Width="100" Source="/images/saxophone.png"/>
+        <Image x:Name="trumpet" HorizontalAlignment="Left" Height="100" Margin="377,209,0,0" VerticalAlignment="Top" Width="100" Source="/images/trumpet.png"/>
+        <Image x:Name="violin" HorizontalAlignment="Left" Height="100" Margin="531,192,0,0" VerticalAlignment="Top" Width="100" Source="/images/violin.png"/>
 
     </Grid>
 </Window>
