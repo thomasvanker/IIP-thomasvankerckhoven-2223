@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfIngredienten", "WpfIngre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[WpfIngredienten (vervolg)]", "[WpfIngredienten (vervolg)]\[WpfIngredienten (vervolg)].csproj", "{86360BC9-2CCE-4A8A-946A-463112901425}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nikemok", "nikemok\nikemok.csproj", "{5B16B516-3EA7-43AD-BEC7-521E5F409910}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,9 +76,16 @@ Global
 		{86360BC9-2CCE-4A8A-946A-463112901425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86360BC9-2CCE-4A8A-946A-463112901425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86360BC9-2CCE-4A8A-946A-463112901425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B16B516-3EA7-43AD-BEC7-521E5F409910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B16B516-3EA7-43AD-BEC7-521E5F409910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B16B516-3EA7-43AD-BEC7-521E5F409910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B16B516-3EA7-43AD-BEC7-521E5F409910}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B16B516-3EA7-43AD-BEC7-521E5F409910} = {DBF157EA-894E-4AB8-AE4A-A79F7EA593DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE454021-DA36-4E27-9771-F635CEE713FA}
