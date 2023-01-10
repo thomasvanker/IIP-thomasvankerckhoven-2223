@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTafels", "ConsoleTaf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFaculteit", "ConsoleFaculteit\ConsoleFaculteit.csproj", "{964EF874-BFDA-4B7A-87E9-3F064AA005FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSchrikkeljaar", "ConsoleSchrikkeljaar\ConsoleSchrikkeljaar.csproj", "{0C54A688-D01B-47CC-B768-CE97983E73DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{964EF874-BFDA-4B7A-87E9-3F064AA005FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{964EF874-BFDA-4B7A-87E9-3F064AA005FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{964EF874-BFDA-4B7A-87E9-3F064AA005FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C54A688-D01B-47CC-B768-CE97983E73DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C54A688-D01B-47CC-B768-CE97983E73DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C54A688-D01B-47CC-B768-CE97983E73DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C54A688-D01B-47CC-B768-CE97983E73DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
