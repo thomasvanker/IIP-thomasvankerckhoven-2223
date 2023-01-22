@@ -25,6 +25,9 @@ namespace ConsoleProject
             fancyManier += "Input: ";
             return fancyManier;
         }
+
+        private static string naam;
+
         static void Main(string[] args)
         {
             SoundPlayer lose = new SoundPlayer("C:\\Users\\thoma\\OneDrive\\Documents\\GitHub\\IIP-thomasvankerckhoven-2223\\SlnProject\\ConsoleProject\\sounds\\chipmunksLose.wav");
@@ -61,7 +64,7 @@ namespace ConsoleProject
                 string text = "Welcome to the Instrument Sequence Game! What is your name? ";
                 string veranderdeText = FancyText(text);
                 Console.Write(veranderdeText);
-                string naam = Console.ReadLine();
+                naam = Console.ReadLine();
                 Console.WriteLine("");
                 string text2 = $"Hey {naam}, How many sounds should be played? (8-10) ";
                 string veranderdeText2 = FancyText(text2);
@@ -119,7 +122,7 @@ namespace ConsoleProject
                         Console.WriteLine("You have the choice between: \r\nclarinet, cello, flute, drums, harp, guitar, saxophone, piano, violin, trumpet. ");
                         Console.WriteLine();
                         Console.ForegroundColor = ConsoleColor.Blue;
-                        Console.WriteLine("_.~\"~._.~\"~._.~\"~._.~\"~.__.~\"~._.~\"~._.~\"~._.~\"~.__.~\"~._.~\"~._.~\"~._.~\"~._");
+                        Console.WriteLine("_.~\"~._.~\"~._.~\"~._.~\"~.__.~\"~._.~\"~._.~    \"~._.~\"~.__.~\"~._.~\"~._.~\"~._.~\"~._");
                         Console.WriteLine();
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("\r\n  ___ _  _ ___ _____ ___ _   _ __  __ ___ _  _ _____   ___ _      ___   _____ _  _  ___ \r\n |_ _| \\| / __|_   _| _ \\ | | |  \\/  | __| \\| |_   _| | _ \\ |    /_\\ \\ / /_ _| \\| |/ __|\r\n  | || .` \\__ \\ | | |   / |_| | |\\/| | _|| .` | | |   |  _/ |__ / _ \\ V / | || .` | (_ |\r\n |___|_|\\_|___/ |_| |_|_\\\\___/|_|  |_|___|_|\\_| |_|   |_| |____/_/ \\_\\_| |___|_|\\_|\\___|\r\n                                                                                        \r\n");
@@ -140,15 +143,20 @@ namespace ConsoleProject
                             Console.Clear();
                             Console.WriteLine("\r\n __    __     _ _     ___ _                      _ \r\n/ / /\\ \\ \\___| | |   / _ \\ | __ _ _   _  ___  __| |\r\n\\ \\/  \\/ / _ \\ | |  / /_)/ |/ _` | | | |/ _ \\/ _` |\r\n \\  /\\  /  __/ | | / ___/| | (_| | |_| |  __/ (_| |\r\n  \\/  \\/ \\___|_|_| \\/    |_|\\__,_|\\__, |\\___|\\__,_|\r\n                                  |___/            \r\n");
                             Console.ForegroundColor = ConsoleColor.Blue;
-                            Console.WriteLine($"Congratulations, you guessed all {aantal} instruments! ");
+                            Console.WriteLine($"Congratulations, you guessed all {aantal} instruments! "); 
                             win.Load();
                             win.Play();
+                            Console.WriteLine("");
+                            int multiplier = 100;
+                            scoreBoard(juisteAnwtoord, multiplier);
+                            Console.WriteLine("");
                             juisteAnwtoord++;
                             instru++;
                             b++;
                         }
                         else
                         {
+                            
                             lose.Load();
                             lose.Play();
                             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -156,6 +164,10 @@ namespace ConsoleProject
                             Console.WriteLine("\r\n  ____     _   _   __  __     ____      _      ____    ____        \r\n |  _\"\\ U |\"|u| |U|' \\/ '|uU | __\")uU  /\"\\  u / __\"| u/ __\"| u     \r\n/| | | | \\| |\\| |\\| |\\/| |/ \\|  _ \\/ \\/ _ \\/ <\\___ \\/<\\___ \\/      \r\nU| |_| |\\ | |_| | | |  | |   | |_) | / ___ \\  u___) | u___) |      \r\n |____/ u<<\\___/  |_|  |_|   |____/ /_/   \\_\\ |____/>>|____/>>     \r\n  |||_  (__) )(  <<,-,,-.   _|| \\\\_  \\\\    >>  )(  (__))(  (__)    \r\n (__)_)     (__)  (./  \\.) (__) (__)(__)  (__)(__)    (__)         \r\n");
                             i--;
                             Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("");
+                            int multiplier = 100;
+                            scoreBoard(juisteAnwtoord, multiplier);
+                            Console.WriteLine("");
                             Console.WriteLine($"Nice try {naam} you got {juisteAnwtoord} correct! ");
                             break;
                         }
@@ -181,10 +193,14 @@ namespace ConsoleProject
                 Console.Clear();
 
                 continue;
-
-                
             }
         }
-    
+        static void scoreBoard(int punten, int score)
+        {
+            int scoreboard = punten * score;
+            Console.WriteLine($"{naam} - {scoreboard}");
+        }
+
+
     }
 }

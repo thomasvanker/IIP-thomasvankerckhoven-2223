@@ -7,24 +7,140 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FFD0F0EF">
-        <ListBox x:Name="listBox" Margin="641,61,0,259" HorizontalAlignment="Left" Width="116">
-            <ListBoxItem Content="NAME - POINTS" HorizontalAlignment="Center" />
-
-        </ListBox>
-        <Label Content="HIGHSCORES" HorizontalAlignment="Left" Margin="659,35,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox" Margin="659,89,0,231" HorizontalAlignment="Left" Width="116"/>
+        <Label Content="Scores this session" HorizontalAlignment="Left" Margin="663,54,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnStart" Content="START" HorizontalAlignment="Left" Margin="50,346,0,0" VerticalAlignment="Top" Height="50" Width="110" FontSize="20" FontWeight="Bold" Click="btnStart_Click"/>
-        <Button x:Name="btnReset" Content="RESET" HorizontalAlignment="Left" Margin="212,346,0,0" VerticalAlignment="Top" Height="50" Width="110" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnReset" Content="RESET" HorizontalAlignment="Left" Margin="212,346,0,0" VerticalAlignment="Top" Height="50" Width="110" FontSize="20" FontWeight="Bold" Click="btnReset_Click"/>
         <Image HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="357" Source="/images/learntosequenceGood.png"/>
-        <Image x:Name="cello" HorizontalAlignment="Left" Height="100" Margin="10,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/cello.png"/>
-        <Image x:Name="clarinet" HorizontalAlignment="Left" Height="90" Margin="105,89,0,0" VerticalAlignment="Top" Width="100" Source="/images/clarinet.png"/>
-        <Image x:Name="drums" HorizontalAlignment="Left" Height="100" Margin="243,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/drums.png"/>
-        <Image x:Name="flute" HorizontalAlignment="Left" Height="100" Margin="377,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/flute.png" StretchDirection="DownOnly" Stretch="Fill"/>
-        <Image x:Name="guitar" HorizontalAlignment="Left" Height="100" Margin="531,68,0,0" VerticalAlignment="Top" Width="100" Source="/images/guitar.png"/>
-        <Image x:Name="harp" HorizontalAlignment="Left" Height="100" Margin="10,192,0,0" VerticalAlignment="Top" Width="100" Source="/images/harp.png"/>
-        <Image x:Name="piano" HorizontalAlignment="Left" Height="100" Margin="105,209,0,0" VerticalAlignment="Top" Width="100" Source="/images/piano.png"/>
-        <Image x:Name="saxophone" HorizontalAlignment="Left" Height="100" Margin="271,192,0,0" VerticalAlignment="Top" Width="100" Source="/images/saxophone.png"/>
-        <Image x:Name="trumpet" HorizontalAlignment="Left" Height="100" Margin="377,209,0,0" VerticalAlignment="Top" Width="100" Source="/images/trumpet.png"/>
-        <Image x:Name="violin" HorizontalAlignment="Left" Height="100" Margin="531,192,0,0" VerticalAlignment="Top" Width="100" Source="/images/violin.png"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="377,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Number Of Sounds" HorizontalAlignment="Left" Margin="518,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="naamBox" HorizontalAlignment="Center" Margin="0,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="naamBox_TextChanged"/>
+        <TextBox x:Name="soundsBox" HorizontalAlignment="Left" Margin="510,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="soundsBox_TextChanged"/>
+        <Button x:Name="cello" Content="" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="96" Width="76" Click="Button_Click_2">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/cello.png"/>
+            </Button.OpacityMask>
+            <Button.BorderBrush>
+                <ImageBrush ImageSource="/images/cello.png"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/cello.png"/>
+            </Button.Background>
+            <Button.Foreground>
+                <ImageBrush TileMode="Tile" ImageSource="/images/cello.png"/>
+            </Button.Foreground>
+        </Button>
+        <Button Content="PLAY" HorizontalAlignment="Left" Margin="400,371,0,0" VerticalAlignment="Top" Click="Button_Click" Width="49"/>
+        <Button Content="MUTE" HorizontalAlignment="Left" Margin="464,371,0,0" VerticalAlignment="Top" Click="Button_Click_1" RenderTransformOrigin="0.5,0.5" Height="20" Width="50">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.515"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="clarinet" Content="" HorizontalAlignment="Left" Margin="106,81,0,0" VerticalAlignment="Top" Height="94" Width="99" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/clarinet.png"/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/images/clarinet.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/clarinet.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="drums" Content="" HorizontalAlignment="Left" Margin="244,70,0,0" VerticalAlignment="Top" Height="100" Width="105" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/drums.png"/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/images/drums.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/drums.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="flute" Content="" HorizontalAlignment="Left" Margin="400,90,0,0" VerticalAlignment="Top" Height="76" Width="99" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/flute.png"/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/images/flute.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/flute.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="guitar" Content="" HorizontalAlignment="Left" Margin="535,89,0,0" VerticalAlignment="Top" Height="77" Width="70" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/guitar.png"/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/images/guitar.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/guitar.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="harp" Content="" HorizontalAlignment="Left" Margin="12,192,0,0" VerticalAlignment="Top" Height="93" Width="74" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/harp.png"/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/images/harp.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/harp.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="piano" Content="" HorizontalAlignment="Left" Margin="106,192,0,0" VerticalAlignment="Top" Height="100" Width="108" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/piano.png"/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/images/piano.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/piano.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="saxophone" Content="" HorizontalAlignment="Left" Margin="244,188,0,0" VerticalAlignment="Top" Height="97" Width="105" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/saxophone.png"/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/images/saxophone.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/saxophone.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="trumpet" Content="" HorizontalAlignment="Left" Margin="398,205,0,0" VerticalAlignment="Top" Height="80" Width="93" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/trumpet.png"/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/images/trumpet.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/trumpet.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="violin" Content="" HorizontalAlignment="Left" Margin="535,203,0,0" VerticalAlignment="Top" Height="85" Width="79" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/images/violin.png"/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/images/violin.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/images/violin.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="scoreLabel" Content="" HorizontalAlignment="Left" Margin="595,359,0,0" VerticalAlignment="Top" FontSize="16"/>
 
     </Grid>
 </Window>
